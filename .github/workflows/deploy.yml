@@ -25,4 +25,4 @@ jobs:
       run: npm run build
 
     - name: Log build files
-      run: ls -la build
+      run: ls -la out
