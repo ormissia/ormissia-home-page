@@ -26,7 +26,7 @@ export default function App() {
             }
         }
         if (video) {
-            video.playbackRate = 5;
+            video.playbackRate = 3;
             console.log("playbackRate", video.playbackRate);
         }
     };
