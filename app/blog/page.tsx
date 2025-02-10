@@ -55,7 +55,7 @@ export default function Blog() {
                     />
                 </NavbarContent>
             </Navbar>
-            <div className="content">
+            <div className="content w-3/4">
                 <BlogCard id={123}/>
                 <BlogCard id={123}/>
                 <BlogCard id={123}/>
