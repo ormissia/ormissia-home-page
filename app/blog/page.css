@@ -1,0 +1,21 @@
+.all {
+    position: fixed; /* 或者使用 position: absolute; 根据需要选择 */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 视口宽度的100% */
+    height: 100vh; /* 视口高度的100% */
+    overflow: auto; /* 如果内容超出屏幕大小，允许滚动 */
+}
+
+.navbar {
+    position: fixed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    z-index: 100;
+}
+
+.content {
+    margin-top: 60px; /* 设置顶部边距等于导航栏的高度 */
+    height: calc(100vh - 60px); /* 计算整个视口高度减去导航栏高度 */
+    /*overflow: auto; !* 如果内容超出屏幕大小，允许滚动 *!*/
+    z-index: 10;
+}

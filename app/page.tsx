@@ -1,5 +1,6 @@
 'use client';
 import React, {useRef} from 'react';
+import Link from "next/link";
 
 
 export default function App() {
@@ -21,7 +22,7 @@ export default function App() {
             const parentElement = e.currentTarget.parentElement;
             if (parentElement) {
                 icon.style.color = window.getComputedStyle(parentElement).backgroundColor;
-            }else {
+            } else {
                 icon.style.color = "white";
             }
         }
@@ -48,14 +49,9 @@ export default function App() {
         }
     };
 
-    const handleClick = () => {
-        console.log("click");
-    };
-
-
     return (
         <div className="container">
-            <div className="section section_1" onClick={handleClick}>
+            <Link href="/" className="section section_1">
                 <div className="video-background-container"
                      ref={videoRef1}
                      onMouseEnter={handleMouseEnter}
@@ -68,8 +64,8 @@ export default function App() {
                         <i className="home_page_title_icon fa-solid fa-screwdriver-wrench"></i>
                     </div>
                 </div>
-            </div>
-            <div className="section section_2">
+            </Link>
+            <Link href="/blog"  className="section section_2">
                 <div className="video-background-container"
                      ref={videoRef2}
                      onMouseEnter={handleMouseEnter}
@@ -82,8 +78,8 @@ export default function App() {
                         <i className="home_page_title_icon fa-solid fa-blog"></i>
                     </div>
                 </div>
-            </div>
-            <div className="section section_3">
+            </Link>
+            <Link href="/"  className="section section_3">
                 <div className="video-background-container"
                      ref={videoRef3}
                      onMouseEnter={handleMouseEnter}
@@ -96,8 +92,8 @@ export default function App() {
                         <i className="home_page_title_icon fa-solid fa-microchip"></i>
                     </div>
                 </div>
-            </div>
-            <div className="section section_4">
+            </Link>
+            <Link href="/"  className="section section_4">
                 <div className="video-background-container"
                      ref={videoRef4}
                      onMouseEnter={handleMouseEnter}
@@ -110,8 +106,8 @@ export default function App() {
                         <i className="home_page_title_icon fa-solid fa-image"></i>
                     </div>
                 </div>
-            </div>
-            <div className="section section_5">
+            </Link>
+            <Link href="/aeon"  className="section section_5">
                 <div className="video-background-container"
                      ref={videoRef5}
                      onMouseEnter={handleMouseEnter}
@@ -120,11 +116,11 @@ export default function App() {
                         <source src={"background.mov"} type="video/mp4"/>
                     </video>
                     <div className="content">
-                        <p className="home_page_title">Matter</p>
+                        <p className="home_page_title">Aeon</p>
                         <i className="home_page_title_icon fa-solid fa-globe"></i>
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 }

@@ -1,5 +1,5 @@
 
-.b_404 {
+.err_code {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     mix-blend-mode: screen; /* 使用混合模式 */
 }
 
-.video_404 {
+.err_code_video {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,7 +25,7 @@
     z-index: 0; /* 置于最底层 */
 }
 
-.link_404{
+.err_page_home_link{
     position: absolute;
     bottom: 0;
     left: 0;

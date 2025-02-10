@@ -13,11 +13,11 @@ export default function NotFound() {
 
     return (
         <div>
-            <p className="b_404">404</p>
-            <video ref={videoRef}  className="video_404" autoPlay loop muted>
+            <p className="err_code">404</p>
+            <video ref={videoRef} className="err_code_video" autoPlay loop muted>
                 <source src={"background.mov"} type="video/mp4"/>
             </video>
-            <Link href="/" className="link_404">Home</Link>
+            <Link href="/" className="err_page_home_link">Home</Link>
         </div>
     );
 }
