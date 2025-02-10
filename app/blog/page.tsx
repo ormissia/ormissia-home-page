@@ -11,16 +11,7 @@ import "./page.css"
 import React from "react";
 import BlogCard from "@/app/blog/card/page";
 
-export class SearchIcon extends React.Component<{}> {
-    render() {
-        return (
-            <i className="fa-solid fa-magnifying-glass"></i>
-        );
-    }
-}
-
 export default function Blog() {
-    // @ts-ignore
     return (
         <div className="all">
             <Navbar className="navbar">
@@ -50,16 +41,16 @@ export default function Blog() {
                         }}
                         placeholder="Type to search..."
                         size="sm"
-                        startContent={<SearchIcon/>}
+                        startContent={<i className="fa-solid fa-magnifying-glass"></i>}
                         type="search"
                     />
                 </NavbarContent>
             </Navbar>
             <div className="content w-3/4">
-                <BlogCard id={123}/>
-                <BlogCard id={123}/>
-                <BlogCard id={123}/>
-                <BlogCard id={123}/>
+                <BlogCard/>
+                <BlogCard/>
+                <BlogCard/>
+                <BlogCard/>
             </div>
         </div>
     );
