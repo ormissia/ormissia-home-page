@@ -51,7 +51,7 @@ export default function App() {
 
     return (
         <div className="container">
-            <Link href="/" className="section section_1">
+            <Link href="https://github.com/ormissia" className="section section_1">
                 <div className="video-background-container"
                      ref={videoRef1}
                      onMouseEnter={handleMouseEnter}
@@ -60,8 +60,8 @@ export default function App() {
                         <source src={"background.mov"} type="video/mp4"/>
                     </video>
                     <div className="content">
-                        <p className="home_page_title">Tools</p>
-                        <i className="home_page_title_icon fa-solid fa-screwdriver-wrench"></i>
+                        <p className="home_page_title">GitHub</p>
+                        <i className="home_page_title_icon fa-brands fa-github"></i>
                     </div>
                 </div>
             </Link>
