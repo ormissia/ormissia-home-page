@@ -7,7 +7,7 @@ export default function BlogCard() {
         <div className="projcard projcard-blue">
             <Link href="/blog/123">
                 <div className="projcard-innerbox">
-                    <img className="projcard-img" src="https://picsum.photos/800/600?image=1041"/>
+                    <img className="projcard-img" src="https://picsum.photos/800/600?image=1041" alt="Blog card preview image"/>
                     <div className="projcard-textbox">
                         <div className="projcard-title">Card Title</div>
                         <div className="projcard-subtitle">This explains the card in more detail</div>
